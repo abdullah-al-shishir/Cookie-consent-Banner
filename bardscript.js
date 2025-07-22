@@ -1,57 +1,21 @@
-        
-        
-        
-        
-        // const cookieBanner = document.getElementById('cookieBanner');
-        // const acceptButton = document.getElementById('acceptCookies');
-        // const closeButton = document.getElementById('closeBanner');
-
-        // /**
-        //  * Hides the cookie banner.
-        //  */
-        // function hideBanner() {
-        //     cookieBanner.classList.remove('show');
-        // }
-
-        // /**
-        //  * Shows the cookie banner.
-        //  */
-        // function showBanner() {
-        //     cookieBanner.classList.add('show');
-        // }
-
-        // // Event listener for the "Accept" button
-        // acceptButton.addEventListener('click', () => {
-        //     hideBanner();
-        // });
-
-        // // Event listener for the "Close" button
-        // closeButton.addEventListener('click', () => {
-        //     hideBanner();
-        // });
-
-        // // Show the banner immediately on page load (no cookie check)
-        // window.onload = () => {
-        //     showBanner();
-        // };
-
-
+// Target Element
 
 const cookieBanner=document.getElementById('cookieBanner');
 const acceptButton=document.getElementById('acceptCookies');
 const closeButton=document.getElementById('closeBanner');
 
-function hideBanner(){
-    cookieBanner.classList.remove("show")
+// Setting Parameter
+const showBanner=()=>{
+    cookieBanner.classList.add('show')
 }
 
-
-function showBanner(){
-    cookieBanner.classList.add('show');
+const hideBanner=()=>{
+    cookieBanner.classList.remove('show')
 }
+// Done Setting Parameter 
 
 
-
+// Adding Event
 acceptButton.addEventListener('click',()=>{
 hideBanner();
 });
@@ -59,6 +23,7 @@ hideBanner();
 closeButton.addEventListener('click',()=>{
 hideBanner();
 });
+//Finished Adding Event
 
 window.onload=()=>{
     showBanner();
